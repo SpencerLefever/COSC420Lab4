@@ -49,6 +49,7 @@ B.data = malloc(A.rows*A.cols*sizeof(int));
 //Only root allocates space for the two matrices
 if(myRank == 0)
 {
+
  A.data = malloc(A.rows*A.cols*sizeof(int));
  B.data = malloc(B.rows*B.cols*sizeof(int));
 }
